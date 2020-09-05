@@ -21,7 +21,7 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 (setq initial-major-mode 'org-mode)
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode nil)
 (setq pop-up-windows nil)
 (tool-bar-mode 0)
 (tooltip-mode  0)
@@ -36,7 +36,7 @@
 
 (save-place-mode 1)
 
-(global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-x C-x") 'execute-extended-command)
+;; (global-set-key (kbd "C-z") 'undo)
+;; (global-set-key (kbd "C-x C-x") 'execute-extended-command)
 
 (provide 'sanity)
