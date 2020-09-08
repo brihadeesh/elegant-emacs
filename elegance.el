@@ -35,15 +35,19 @@
 ;; Font and frame size
 ;; (set-face-font 'default "Operator Mono Light:size=9")
 ;; (set-face-font 'default "Input Mono Narrow ExLight:size=10")
-(set-face-font 'default "Victor Mono Light:size=10")
+;; (set-face-font 'default "Victor Mono Light:size=10")
+(set-face-font 'default "Unifont Medium 8")
+;; (set-face-font 'default "Sudo Thin 9")
 (setq default-frame-alist
       (append (list '(width  . 105) '(height . 50)
 		    '(vertical-scroll-bars . nil)
 		    '(internal-border-width . 5)
 		    ;; '(font . "Operator Mono Light:size=9"))))
 		    ;; '(font . "Input Mono Narrow ExLight:size=10"))))
-		    '(font . "Victor Mono Light:size=10"))))
-		    (set-frame-parameter (selected-frame) 'internal-border-width 5)
+		    ;; '(font . "Victor Mono Light:size=10"))))
+		    '(font . "Unifont Medium 8"))))
+;; '(font . "Sudo Thin 9"))))
+(set-frame-parameter (selected-frame) 'internal-border-width 5)
 
 ;; Line spacing, can be 0 for code and 1 or 2 for text
 (setq-default line-spacing nil)
