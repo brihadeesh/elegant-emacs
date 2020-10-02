@@ -1,4 +1,4 @@
-;;; elegant-emacs-selenizedless-theme.el --- A very minimal but elegant and consistent theme
+;;; elegant-gunmetal-theme.el --- A very minimal but elegant and consistent theme
 ;;; Copyright (C) 2020 Nicolas P. Rougier
 ;;; Copyright (C) 2020 Brihadeesh S
 ;;; -------------------------------------------------------------------
@@ -34,45 +34,43 @@
 
 ;;; Theme definition
 ;;; -------------------------------------------------------------------
-(deftheme elegant-emacs-selenizedless
+(deftheme elegant-gunmetal
   "A simple yet elegant theme for emacs.")
 ;;; -------------------------------------------------------------------
 
 
-;;; Require elegant-emacs-common
+;;; Require elegant-common
 ;;; -------------------------------------------------------------------
-; (load "~/.emacs.d/elegant-emacs/elegant-emacs-common.el")
-(require 'elegant-emacs-common)
+;; (load "~/.emacs.d/elegant-emacs/elegant.el")
+(require 'elegant)
 ;;; -------------------------------------------------------------------
 
 
 ;;; General colors
 ;;; -------------------------------------------------------------------
-(set-background-color "#fbf3db")
-(set-foreground-color "#53676d")
+(set-background-color "#3f3f3f")
+(set-foreground-color "#dcdccc")
 (set-face-attribute 'default nil
-                    :foreground (face-foreground 'default)
-                    :background (face-background 'default))
-(set-face-attribute 'face-visual-mark nil :background "#ffffd7")
-(set-face-attribute 'face-critical nil :foreground "#ffffff"
-                    :background "#d2212d")
-(set-face-attribute 'face-popout nil :foreground "#cc1729")
-(set-face-attribute 'face-strong nil :foreground "#3a4d53")
-(set-face-attribute 'face-salient nil :foreground "#006dce")
-(set-face-attribute 'face-faded nil :foreground "#909995")
-(set-face-attribute 'face-negativenum nil :foreground "#00978a")
-(set-face-attribute 'face-subtle nil :background "#ece3cc")
-
+		    :foreground (face-foreground 'default)
+		    :background (face-background 'default))
+(set-face-attribute 'face-critical nil :foreground "#385f38"
+		    :background "#f8f893")
+(set-face-attribute 'face-popout nil :foreground "#f0dfaf")
+(set-face-attribute 'face-strong nil :foreground "#dcdccc"
+		    :weight 'regular)
+(set-face-attribute 'face-salient nil :foreground "#dca3a3"
+		    :weight 'light)
+(set-face-attribute 'face-faded nil :foreground "#777767"
+		    :weight 'light)
+(set-face-attribute 'face-subtle nil :background "#4f4f4f")
 (set-modeline-faces)
-
-'(cus-edit (set-button-faces))
 ;;; -------------------------------------------------------------------
 
 
-;;; Provide the elegant-emacs-selenizedless theme
+;;; Provide the elegant-gunmetal theme
 ;;; -------------------------------------------------------------------
-(provide-theme 'elegant-emacs-selenizedless)
+(provide-theme 'elegant-gunmetal)
 ;;; -------------------------------------------------------------------
 
 
-;;; elegant-emacs-selenizedless-theme.el ends here
+;;; elegant-gunmetal-theme.el ends here

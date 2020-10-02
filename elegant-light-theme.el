@@ -1,14 +1,12 @@
-;;; elegant-emacs-github-theme.el --- A very minimal but elegant and consistent theme
-;;; Copyright (C) 2020 Nicolas P. Rougier
+;;; elegant-light-theme.el --- A very minimal but elegant and consistent theme
+;;; Copyright (C) 2020 Nicolas P. Rougier and Nicolò Zorzetto
 ;;; -------------------------------------------------------------------
-;;; Author: Nicolas P. Rougier
-;;; Author: Brihadeesh S
-;;; URL: https://github.com/brihadeesh/elegant-emacs
+;;; Authors: Nicolas P. Rougier and Nicolò Zorzetto
 ;;; -------------------------------------------------------------------
-;;; Version: 0.1
+;;; URL: https://github.com/rougier/elegant-emacs
+;;; -------------------------------------------------------------------
+;;; Version: 1
 ;;; Package-Requires: ((emacs "25.1"))
-;;; -------------------------------------------------------------------
-;;; This theme was packaged by Brihadeesh S <github.com/brihadeesh>
 ;;; -------------------------------------------------------------------
 ;;; This file is not part of GNU Emacs.
 ;;;
@@ -30,36 +28,36 @@
 ;;; -------------------------------------------------------------------
 ;;; Code:
 
-
 ;;; Theme definition
 ;;; -------------------------------------------------------------------
-(deftheme elegant-emacs-github
+(deftheme elegant-light
   "A simple yet elegant theme for emacs.")
 ;;; -------------------------------------------------------------------
 
 
 ;;; Require elegant-emacs-common
 ;;; -------------------------------------------------------------------
-; (load "~/.emacs.d/elegant-emacs/elegant-emacs-common.el")
-(require 'elegant-emacs-common)
+;; (load "~/.emacs.d/elegant/elegant.el")
+(require 'elegant)
 ;;; -------------------------------------------------------------------
 
 
 ;;; General colors
 ;;; -------------------------------------------------------------------
 (set-background-color "#ffffff")
-(set-foreground-color "#24292e")
+(set-foreground-color "#333333")
 (set-face-attribute 'default nil
-                    :foreground (face-foreground 'default)
-                    :background (face-background 'default))
-(set-face-attribute 'face-visual-mark nil :background "#d0d0d0")
+		    :foreground (face-foreground 'default)
+		    :background (face-background 'default))
 (set-face-attribute 'face-critical nil :foreground "#ffffff"
-                    :background "#ff6347")
-(set-face-attribute 'face-popout nil :foreground "#032f62")
-(set-face-attribute 'face-strong nil :foreground "#6f42c1")
-(set-face-attribute 'face-salient nil :foreground "#d73a49")
-(set-face-attribute 'face-faded nil :foreground "#6a737d")
-(set-face-attribute 'face-negativenum nil :foreground "#00978a")
+		    :background "#ff6347")
+(set-face-attribute 'face-popout nil :foreground "#ffa07a")
+(set-face-attribute 'face-strong nil :foreground "#333333"
+		    :weight 'regular)
+(set-face-attribute 'face-salient nil :foreground "#00008b"
+		    :weight 'light)
+(set-face-attribute 'face-faded nil :foreground "#999999"
+		    :weight 'light)
 (set-face-attribute 'face-subtle nil :background "#f0f0f0")
 
 (set-modeline-faces)
@@ -68,10 +66,10 @@
 ;;; -------------------------------------------------------------------
 
 
-;;; Provide the elegant-emacs-github theme
+;;; Provide the elegant-emacs-dark theme
 ;;; -------------------------------------------------------------------
-(provide-theme 'elegant-emacs-github)
+(provide-theme 'elegant-light)
 ;;; -------------------------------------------------------------------
 
 
-;;; elegant-emacs-github-theme.el ends here
+;;; elegant-light-theme.el ends here

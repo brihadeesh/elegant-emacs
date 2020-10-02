@@ -1,4 +1,4 @@
-;;; elegant-emacs-gunmetal-theme.el --- A very minimal but elegant and consistent theme
+;;; elegant-reddish-theme.el --- A very minimal but elegant and consistent theme
 ;;; Copyright (C) 2020 Nicolas P. Rougier
 ;;; Copyright (C) 2020 Brihadeesh S
 ;;; -------------------------------------------------------------------
@@ -34,15 +34,15 @@
 
 ;;; Theme definition
 ;;; -------------------------------------------------------------------
-(deftheme elegant-emacs-gunmetal
+(deftheme elegant-reddish
   "A simple yet elegant theme for emacs.")
 ;;; -------------------------------------------------------------------
 
 
-;;; Require elegant-emacs-common
+;;; Require elegant-common
 ;;; -------------------------------------------------------------------
-; (load "~/.emacs.d/elegant-emacs/elegant-emacs-common.el")
-(require 'elegant-emacs-common)
+;; (load "~/.emacs.d/elegant-emacs/elegant.el")
+(require 'elegant)
 ;;; -------------------------------------------------------------------
 
 
@@ -67,10 +67,10 @@
 ;;; -------------------------------------------------------------------
 
 
-;;; Provide the elegant-emacs-gunmetal theme
+;;; Provide the elegant-reddish theme
 ;;; -------------------------------------------------------------------
-(provide-theme 'elegant-emacs-gunmetal)
+(provide-theme 'elegant-reddish)
 ;;; -------------------------------------------------------------------
 
 
-;;; elegant-emacs-gunmetal-theme.el ends here
+;;; elegant-reddish-theme.el ends here

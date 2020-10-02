@@ -1,15 +1,12 @@
-;;; elegant-emacs-reddish-theme.el --- A very minimal but elegant and consistent theme
-;;; Copyright (C) 2020 Nicolas P. Rougier
-;;; Copyright (C) 2020 Brihadeesh S
+;;; elegant-dark-theme.el --- A very minimal but elegant and consistent theme
+;;; Copyright (C) 2020 Nicolas P. Rougier and Nicolò Zorzetto
 ;;; -------------------------------------------------------------------
-;;; Author: Nicolas P. Rougier
-;;; Author: Brihadeesh S
-;;; URL: https://github.com/brihadeesh/elegant-emacs
+;;; Authors: Nicolas P. Rougier and Nicolò Zorzetto
 ;;; -------------------------------------------------------------------
-;;; Version: 0.1
+;;; URL: https://github.com/rougier/elegant-emacs
+;;; -------------------------------------------------------------------
+;;; Version: 1
 ;;; Package-Requires: ((emacs "25.1"))
-;;; -------------------------------------------------------------------
-;;; This theme was packaged by Brihadeesh S <github.com/brihadeesh>
 ;;; -------------------------------------------------------------------
 ;;; This file is not part of GNU Emacs.
 ;;;
@@ -34,15 +31,15 @@
 
 ;;; Theme definition
 ;;; -------------------------------------------------------------------
-(deftheme elegant-emacs-reddish
+(deftheme elegant-dark
   "A simple yet elegant theme for emacs.")
 ;;; -------------------------------------------------------------------
 
 
 ;;; Require elegant-emacs-common
 ;;; -------------------------------------------------------------------
-; (load "~/.emacs.d/elegant-emacs/elegant-emacs-common.el")
-(require 'elegant-emacs-common)
+; (load "~/.emacs.d/elegant/elegant.el")
+(require 'elegant)
 ;;; -------------------------------------------------------------------
 
 
@@ -67,10 +64,11 @@
 ;;; -------------------------------------------------------------------
 
 
-;;; Provide the elegant-emacs-reddish theme
+;;; Provide the elegant-emacs-dark theme
 ;;; -------------------------------------------------------------------
-(provide-theme 'elegant-emacs-reddish)
+(provide-theme 'elegant-dark)
 ;;; -------------------------------------------------------------------
 
 
-;;; elegant-emacs-reddish-theme.el ends here
+;;; elegant-dark-theme.el ends here
+

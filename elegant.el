@@ -1,13 +1,12 @@
-;;; elegant-emacs-common.el --- A very minimal but elegant and consistent theme
-;;; Copyright (C) 2020 Nicolas P. Rougier
+;;; elegant.el --- A very minimal but elegant and consistent theme
+;;; Copyright (C) 2020 Nicolas P. Rougier and Nicolò Zorzetto
 ;;; -------------------------------------------------------------------
-;;; Author: Nicolas P. Rougier
+;;; Authors: Nicolas P. Rougier and Nicolò Zorzetto
+;;; -------------------------------------------------------------------
 ;;; URL: https://github.com/rougier/elegant-emacs
 ;;; -------------------------------------------------------------------
-;;; Version: 0.1
+;;; Version: 1
 ;;; Package-Requires: ((emacs "25.1"))
-;;; -------------------------------------------------------------------
-;;; This theme was packaged by Nicolò Zorzetto <github.com/NicoloZorzetto>
 ;;; -------------------------------------------------------------------
 ;;; This file is not part of GNU Emacs.
 ;;;
@@ -41,6 +40,12 @@
                      'internal-border-width 24)
 ;;; -------------------------------------------------------------------
 
+;;; Line spacing, can be 0 for code and 1 or 2 for text
+;;; -------------------------------------------------------------------
+(setq-default line-spacing 0)
+(setq x-underline-at-descent-line t)
+(setq widget-image-enable nil)
+;;; -------------------------------------------------------------------
 
 ;;; Line cursor and no blink
 ;;; -------------------------------------------------------------------
@@ -163,7 +168,7 @@ background color that is barely perceptible."
          (if (and buffer-file-name (buffer-modified-p))
              (propertize "(modified)" 'face `(:inherit face-faded)))))
        (format-mode-line
-        (propertize "%4l:%2c  " 'face `(:inherit face-faded)))))))
+        (propertize "%4l:%2c" 'face `(:inherit face-faded)))))))
 ;;; -------------------------------------------------------------------
 
 
@@ -586,7 +591,7 @@ function is a convenience wrapper used by `describe-package-1'."
 
 ;;; Provide commons for the elegant-emacs-themes
 ;;; -------------------------------------------------------------------
-(provide 'elegant-emacs-common)
+(provide 'elegant)
 ;;; -------------------------------------------------------------------
 
-;;; elegant-emacs-common.el ends here
+;;; elegant.el ends here

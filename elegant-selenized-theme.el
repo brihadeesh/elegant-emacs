@@ -1,4 +1,4 @@
-;;; elegant-emacs-acme-theme.el --- A very minimal but elegant and consistent theme
+;;; elegant-selenizedless-theme.el --- A very minimal but elegant and consistent theme
 ;;; Copyright (C) 2020 Nicolas P. Rougier
 ;;; Copyright (C) 2020 Brihadeesh S
 ;;; -------------------------------------------------------------------
@@ -34,33 +34,34 @@
 
 ;;; Theme definition
 ;;; -------------------------------------------------------------------
-(deftheme elegant-emacs-acme
+(deftheme elegant-selenizedless
   "A simple yet elegant theme for emacs.")
 ;;; -------------------------------------------------------------------
 
 
-;;; Require elegant-emacs-common
+;;; Require elegant-common
 ;;; -------------------------------------------------------------------
-; (load "~/.emacs.d/elegant-emacs/elegant-emacs-common.el")
-(require 'elegant-emacs-common)
+;; (load "~/.emacs.d/elegant-emacs/elegant.el")
+(require 'elegant)
 ;;; -------------------------------------------------------------------
 
 
 ;;; General colors
 ;;; -------------------------------------------------------------------
-(set-background-color "#ffffd7")
-(set-foreground-color "#101412")
+(set-background-color "#fbf3db")
+(set-foreground-color "#53676d")
 (set-face-attribute 'default nil
                     :foreground (face-foreground 'default)
                     :background (face-background 'default))
-(set-face-attribute 'face-visual-mark nil :background "#d7ffff")
-(set-face-attribute 'face-critical nil :foreground "#00ffff" :background "#ff6347")
-(set-face-attribute 'face-popout nil :foreground "#424242")
-(set-face-attribute 'face-strong nil :foreground "#000000")
-(set-face-attribute 'face-salient nil :foreground "#cd00cd")
-(set-face-attribute 'face-faded nil :foreground "#a9a9a1")
+(set-face-attribute 'face-visual-mark nil :background "#ffffd7")
+(set-face-attribute 'face-critical nil :foreground "#ffffff"
+                    :background "#d2212d")
+(set-face-attribute 'face-popout nil :foreground "#cc1729")
+(set-face-attribute 'face-strong nil :foreground "#3a4d53")
+(set-face-attribute 'face-salient nil :foreground "#006dce")
+(set-face-attribute 'face-faded nil :foreground "#909995")
 (set-face-attribute 'face-negativenum nil :foreground "#00978a")
-(set-face-attribute 'face-subtle nil :background "#ffff87")
+(set-face-attribute 'face-subtle nil :background "#ece3cc")
 
 (set-modeline-faces)
 
@@ -68,10 +69,10 @@
 ;;; -------------------------------------------------------------------
 
 
-;;; Provide the elegant-emacs-acme theme
+;;; Provide the elegant-selenizedless theme
 ;;; -------------------------------------------------------------------
-(provide-theme 'elegant-emacs-acme)
+(provide-theme 'elegant-selenizedless)
 ;;; -------------------------------------------------------------------
 
 
-;;; elegant-emacs-acme-theme.el ends here
+;;; elegant-selenizedless-theme.el ends here
